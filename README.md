@@ -175,7 +175,7 @@ from lib.generate_log import generate_log
 entries = [
     "User logged in",
     "User updated profile",
-    "Report exported"
+    "User logged out"
 ]
 
 filename = generate_log(entries)
