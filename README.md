@@ -200,7 +200,7 @@ log_20261107.txt
 ```text
 User logged in
 User updated profile
-Report exported
+User logged out
 ```
 
 ## Running Tests
