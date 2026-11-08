@@ -146,3 +146,69 @@ After completing this lab, you will:
 ✅ Structure projects for portability and collaboration
 
 These scripting and packaging skills are essential for building automation tools and working in modern Python development workflows.
+
+### 1. Clone the Repository
+
+```bash
+git clone git@github.com:a-gbatie/course-7-module-6-pip-pypi-scripting-lab.git
+```
+
+### 2. Set Up Python 3.10
+
+```bash
+python3 -m pipenv --python /opt/homebrew/bin/python3.10
+```
+
+### 3. Install Dependencies
+
+```bash
+python3 -m pipenv install
+```
+
+## How to Run
+
+You can call the `generate_log()` function from another Python file:
+
+```python
+from lib.generate_log import generate_log
+
+entries = [
+    "User logged in",
+    "User updated profile",
+    "Report exported"
+]
+
+filename = generate_log(entries)
+
+print(filename)
+```
+
+The function creates a text file using the following naming convention:
+
+```text
+log_YYYYMMDD.txt
+```
+
+For example:
+
+```text
+log_20261107.txt
+```
+
+### Example File Contents
+
+```text
+User logged in
+User updated profile
+Report exported
+```
+
+## Running Tests
+
+Run the test suite from the project directory:
+
+```bash
+python3 -m pipenv run pytest -v
+```
+## Screenshot of Completed Tests
+![alt text](image.png)
